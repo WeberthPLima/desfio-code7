@@ -4,7 +4,6 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { AppComponent } from '../app.component';
 
 @NgModule({
   declarations: [MainLayoutComponent],
@@ -12,7 +11,7 @@ import { AppComponent } from '../app.component';
     BrowserModule,
     RouterModule,
     HttpClientModule,
-    ComponentsModule
+    ComponentsModule,
   ],
   exports: [
     MainLayoutComponent,

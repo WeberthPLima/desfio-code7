@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoadingComponent } from './loading/loading.component';
 import { CardFilmComponent } from './card-film/card-film.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [HeaderComponent,
@@ -21,6 +22,7 @@ import { PaginationComponent } from './pagination/pagination.component';
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     ReactiveFormsModule,
   ],
   exports: [HeaderComponent,

@@ -10,8 +10,5 @@ export class NavComponent {
 
   constructor(private router: Router) { }
 
-  goTo(url: string) {
-    this.router.navigateByUrl(url);
-  }
 
 }
