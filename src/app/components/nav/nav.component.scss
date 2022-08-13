@@ -1,0 +1,20 @@
+nav {
+  ul {
+    display: flex;
+    li {
+      a {
+        cursor: pointer;
+        border-right: solid 2px var(--white);
+        padding-right: 1rem;
+      }
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+        a {
+          border-right: 0;
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+}

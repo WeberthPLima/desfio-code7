@@ -1,0 +1,7 @@
+<div class="pagination">
+  <button
+    *ngFor="let item of qtdPages()"
+    [ngClass]="{active: page === item}"
+    (click)="setPage(item)"
+    >{{item}}</button>
+</div>

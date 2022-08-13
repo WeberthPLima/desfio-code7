@@ -1,0 +1,49 @@
+section.search {
+  margin: 2rem 0;
+  h2 {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  .formSearch{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: solid 2px var(--primary-color);
+      color: var(--primary-color);
+      border-right: none;
+      outline: none;
+    }
+  }
+  .response {
+    .error {
+      border: solid 2px var(--error);
+      background: #ffdddd;
+      border-radius: 8px;
+      margin: 2rem 0;
+      p {
+        padding: 1rem;
+        color: var(--error);
+      }
+    }
+    .films {
+      h3 {
+        margin: 2rem 0;
+        font-size: 1.3rem;
+        color: var(--primary-color);
+      }
+      .list-films {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item-film {
+          width: 18%;
+        }
+      }
+    }
+  }
+}

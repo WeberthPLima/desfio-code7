@@ -1,0 +1,12 @@
+.page-contact{
+  min-height: calc(100vh - 180px);
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--terciary-color);
+  }
+  .form, p{
+    margin: 2rem 0;
+  }
+}
+

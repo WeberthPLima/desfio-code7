@@ -1,0 +1,35 @@
+<section class="search">
+  <div class="container">
+    <h2>Encontre seus filmes</h2>
+    <form class="formSearch" [formGroup]="formSearch" (ngSubmit)="getFilms()">
+      <input type="text" formControlName="search" placeholder="Faça sua busca" />
+      <button type="submit" [disabled]="!formSearch.valid">Pesquisar</button>
+    </form>
+
+    <div class="response" *ngIf="initSearch">
+      <app-loading *ngIf="loading"></app-loading>
+      <div class="error" *ngIf="error">
+        <p>Não foi possível completar sua busca.</p>
+        <p>Verifique sua busca e tente novamente.</p>
+      </div>
+
+      <div class="films" *ngIf="data.length && !error && !loading">
+        <h3>{{totalResults}} filmes encontrados</h3>
+        <div class="list-films">
+          <div class="item-film" *ngFor="let item of data">
+            <app-card-film [data]="item"></app-card-film>
+          </div>
+        </div>
+      </div>
+
+      <app-pagination
+        *ngIf="totalResults > 10 && !error && !loading"
+        [totalResults]="totalResults"
+        [page]="page"
+        (pageChange)="getFilms($event)"
+      ></app-pagination>
+
+    </div>
+
+  </div>
+</section>

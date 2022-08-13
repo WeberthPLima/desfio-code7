@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  button {
+    background: #fff;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    border-right: 0px;
+    &:last-child {
+      border-right: solid 1px var(--primary-color);
+    }
+    &:hover{
+      background: var(--secundary-grey);
+    }
+    &.active {
+      background: var(--primary-color);
+      color: #fff;
+    }
+  }
+}

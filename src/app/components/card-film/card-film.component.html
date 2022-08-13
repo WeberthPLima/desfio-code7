@@ -1,0 +1,5 @@
+<div class="card-film">
+  <span [ngClass]="{film: data.Type === 'movie'}">{{data.Type === 'movie' ? 'Filme' : 'Série'}}</span>
+  <img [src]="data.Poster" [alt]="data.Title" onerror="this.onerror=null;this.src='../../../assets/no-image.jpg'">
+  <h2>{{data.Title}}</h2>
+</div>

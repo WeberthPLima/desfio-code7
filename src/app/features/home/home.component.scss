@@ -1,0 +1,34 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--terciary-color);
+}
+.destaques {
+  margin-top: 2rem;
+  h2,
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--terciary-color);
+    margin: 1rem 0;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  p {
+    margin: 1rem 0;
+    text-indent: 2rem;
+  }
+  ul {
+    padding-left: 2rem;
+    li {
+      list-style-type: decimal;
+      line-height: 2rem;
+      ul {
+        li {
+          list-style-type: lower-latin;
+        }
+      }
+    }
+  }
+}
