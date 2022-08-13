@@ -67,3 +67,4 @@ packages/site/syz-web/src/assets/libs/syz
 # Build artefacts
 **/dist/
 **/build/
+**/.angular/
